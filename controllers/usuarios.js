@@ -1,5 +1,5 @@
 const { request, response } = require("express");
- 
+
 const usuariosGet = (req = request, res = response) => {
   res.json({ msg: "Hola a todos desde GET" });
 };
