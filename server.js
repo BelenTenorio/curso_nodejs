@@ -10,7 +10,7 @@ class Server {
     this.middlewares();
     this.routes();
   }
- 
+
   middlewares() {
     this.app.use(cors());
     this.app.use(express.json());
@@ -18,9 +18,6 @@ class Server {
   }
 
   routes() {
-    this.app.get("/", function (req, res) {
-      res.send("Hola a todos");
-    });
     this.app.use(this.rutasUsuarios, require("./routes/usuarios"));
   }
 
@@ -28,4 +25,5 @@ class Server {
     this.app.listen(this.port);
   }
 }
+
 module.exports = Server;

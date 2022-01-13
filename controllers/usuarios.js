@@ -19,4 +19,4 @@ const usuariosDelete = (req = request, res = response) => {
   res.status(500).json({ msg: "Hola a todos desde DELETE", usuario, password });
 };
 
-module.exports = { usuariosGet, usuariosPost, usuariosPut, usuariosDelete };     
+module.exports = { usuariosGet, usuariosPost, usuariosPut, usuariosDelete };      
