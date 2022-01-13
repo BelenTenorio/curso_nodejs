@@ -12,4 +12,4 @@ console.log(config);
 
 const pool = mariadb.createPool(config);       
 
-module.exports = pool;     
+module.exports = pool;
