@@ -1,13 +1,15 @@
 const mariadb = require("mariadb");
 
 const config = {
-    host: process.env.HOST,
-    user: process.env.USER,
+    host: process.env.HOST, 
+    user: process.env.DBUSER,  
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
     connectionLimit: process.env.CONN_LIMIT,
 };
 
-const pool = mariadb.createPool(config);
+console.log(config);
 
-module.exports = pool;
+const pool = mariadb.createPool(config);       
+
+module.exports = pool;     
